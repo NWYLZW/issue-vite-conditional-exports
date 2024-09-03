@@ -1,0 +1,18 @@
+{
+  "name": "issue-vite-conditional-exports",
+  "version": "1.0.0",
+  "exports": {
+    "./foo": {
+      "node": "./src/foo.node.ts",
+      "browser": "./src/foo.browser.ts"
+    }
+  },
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5",
+    "issue-vite-conditional-exports": "file:."
+  }
+}
